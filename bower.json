@@ -1,0 +1,33 @@
+{
+  "name": "famous-infinitescroll",
+  "version": "0.0.0",
+  "homepage": "https://github.com/JonnyBGod/famous-infinitescroll",
+  "authors": [
+    "Joao Ribeiro <jonnybgod@gmail.com>"
+  ],
+  "description": "Infinite Scroll implementation for famous framework",
+  "main": "infiniteScrollView.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "famo.us",
+    "famous",
+    "infinite",
+    "scroll",
+    "infiniteScroll",
+    "befamous"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.11",
+    "famous": "git+https://github.com/Famous/famous.git#flat0.1.1"
+  },
+}

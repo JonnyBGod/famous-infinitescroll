@@ -1,0 +1,39 @@
+{
+  "name": "famous-infinitescroll",
+  "version": "0.0.1",
+  "description": "Infinite Scroll implementation for famous framework",
+  "keywords": [
+    "moloni",
+    "api",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/JonnyBGod/famous-infinitescroll",
+  "author": {
+    "name": "Joao Ribeiro <jonnybgod@gmail.com>"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/JonnyBGod/famous-infinitescroll/raw/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonnyBGod/famous-infinitescroll.git"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "matchdep": "latest",
+    "grunt-push-release": "latest"
+  },
+  "engines": [
+    "node >=0.10.0"
+  ],
+  "main": "infiniteScrollView.js",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/JonnyBGod/famous-infinitescroll/issues"
+  },
+  "_id": "famous-infinitescroll@0.0.0",
+  "_from": "famous-infinitescroll@latest"
+}
