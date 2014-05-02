@@ -10,6 +10,8 @@ You can install famous-infinitescroll and its dependencies with bower: `bower in
 
 ## Getting started
 
+	var InfiniteScrollView  = require('famous-infinitescroll/InfiniteScrollView');
+
 	this.viewList = [];
 
 	this.scrollview = new InfiniteScrollView({
@@ -24,7 +26,7 @@ You can install famous-infinitescroll and its dependencies with bower: `bower in
 
 	this.scrollview.on('infiniteScroll', function(data) {
 		this.scrollview.infiniteScrollDisabled = true;
-		
+
 		console.log('infiniteScroll');
 
 		setTimeout(function () {
