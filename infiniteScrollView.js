@@ -1,7 +1,7 @@
 define(function(require, exports, module) {
     var ScrollView = require('famous/views/Scrollview');
 
-    function InfiniteScrollView() {
+    function InfiniteScrollView(options) {
         ScrollView.apply(this, arguments);
 
         if (this.options.offset)
@@ -33,7 +33,7 @@ define(function(require, exports, module) {
         }.bind(this));
 
         this.sync.on('update',function(data) {
-            if (!this.infiniteScrollDisabled && -this._pageSpringPosition + this.getSize()[1] >= this.contentSize - this.offset) {
+            if (!this.infiniteScrollDisabled && this._scroller._position + Math.abs(this._pageSpringPosition) + this.getSize()[1] >= this.contentSize - this.offset) {
                 this._eventOutput.emit('infiniteScroll');
             }
         }.bind(this));
