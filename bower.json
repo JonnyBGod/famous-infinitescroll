@@ -28,6 +28,6 @@
   ],
   "dependencies": {
     "requirejs": "~2.1.11",
-    "famous": "git+https://github.com/Famous/famous.git#flat0.1.1"
+    "famous": "~0.2.0"
   }
 }
