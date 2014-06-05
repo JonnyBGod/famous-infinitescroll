@@ -27,6 +27,15 @@ define(function(require, exports, module) {
         }
     }
 
+    InfiniteScrollView.prototype.disable = function() {
+        this.infiniteScrollDisabled = true;
+    }
+
+    InfiniteScrollView.prototype.enable = function() {
+        this._setContentSize();
+        this.infiniteScrollDisabled = false;
+    }
+
     function _monitor() {
         this.sync.on('start',function(data) {
             this._setContentSize();
