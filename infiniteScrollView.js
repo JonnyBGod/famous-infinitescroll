@@ -23,7 +23,7 @@ define(function(require, exports, module) {
         var node = this._node;
         this.contentSize = 0;
         for(var i in node._.array) {
-            this.contentSize += node._.array[i].getSize()[1];
+            this.contentSize += node._.array[i].size[1];
         }
     }
 
