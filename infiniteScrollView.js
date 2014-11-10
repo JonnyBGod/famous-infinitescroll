@@ -23,7 +23,7 @@ define(function(require, exports, module) {
         var node = this._node;
         this.contentSize = 0;
         for(var i in node._.array) {
-            this.contentSize += node._.array[i].size[1];
+            this.contentSize += node._.array[i].getSize()[1];
         }
     }
 
@@ -42,7 +42,7 @@ define(function(require, exports, module) {
         }.bind(this));
 
         this.sync.on('update',function(data) {
-            if (!this.infiniteScrollDisabled && this._scroller._position + Math.abs(this._pageSpringPosition) + this.getSize()[1] >= this.contentSize - this.offset) {
+            if (!this.infiniteScrollDisabled && this.getAbsolutePosition() + this._scroller._contextSize[1] >= this.contentSize - this.offset) {
                 this._eventOutput.emit('infiniteScroll');
             }
         }.bind(this));
